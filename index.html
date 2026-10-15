@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhyudita Tripathi — ML & Data Systems</title>
+<meta name="description" content="Sophomore at IIT Kharagpur building ML and data systems. ML Intern at FlyRank.">
+<style>
+  :root{
+    --bg:#0b0e14; --bg2:#10141f; --card:#121826; --line:#232c42;
+    --ink:#e8ecf4; --muted:#9aa7c2; --faint:#6b7794;
+    --accent:#8b7cf6; --accent2:#4ade80; --chip:#1a2133;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:"Avenir Next","Segoe UI",system-ui,-apple-system,sans-serif;line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+  header{position:sticky;top:0;background:rgba(11,14,20,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+  .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+  .logo{font-weight:700;letter-spacing:.4px;color:var(--ink)}
+  .logo span{color:var(--accent)}
+  .nav .links a{color:var(--muted);margin-left:22px;font-size:.95rem}
+  .nav .links a:hover{color:var(--ink);text-decoration:none}
+  .hero{padding:88px 0 64px;background:
+    radial-gradient(640px 300px at 18% -60px, rgba(139,124,246,.22), transparent 60%),
+    radial-gradient(520px 260px at 88% -40px, rgba(74,222,128,.12), transparent 60%), var(--bg)}
+  .kicker{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--accent2);font-size:.9rem;letter-spacing:1.2px;text-transform:uppercase}
+  h1{font-size:3.1rem;line-height:1.12;margin:14px 0 6px;font-weight:800;letter-spacing:-.5px}
+  h1 .grad{background:linear-gradient(92deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .tagline{font-size:1.25rem;color:var(--muted);max-width:640px}
+  .chips{margin:26px 0 8px;display:flex;flex-wrap:wrap;gap:10px}
+  .chip{background:var(--chip);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 14px;font-size:.88rem}
+  .chip b{color:var(--accent2);font-weight:600}
+  .cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:11px 22px;border-radius:10px;font-weight:600;border:1px solid var(--line);color:var(--ink);background:var(--card)}
+  .btn:hover{text-decoration:none;border-color:var(--accent)}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#0b0e14}
+  .btn.primary:hover{background:#a294ff}
+  section{padding:56px 0 8px}
+  h2{font-size:1.7rem;margin-bottom:6px;display:flex;align-items:center;gap:12px}
+  h2::after{content:"";flex:1;height:1px;background:var(--line)}
+  .sub{color:var(--faint);margin-bottom:26px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 26px;margin-bottom:18px}
+  .card h3{font-size:1.15rem;margin-bottom:2px}
+  .card .meta{color:var(--accent);font-size:.9rem;font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;margin-bottom:10px}
+  .card p,.card li{color:var(--muted)}
+  .card ul{margin-left:18px}
+  .card li{margin-bottom:4px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media (max-width:760px){.grid{grid-template-columns:1fr}h1{font-size:2.3rem}}
+  .grid .card{margin-bottom:0}
+  .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .skillbox{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+  .skillbox h3{font-size:1rem;color:var(--accent2);margin-bottom:8px;font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-weight:600}
+  .skillbox p{color:var(--muted);font-size:.95rem}
+  .plain li{color:var(--muted);margin:0 0 8px 18px}
+  .plain b{color:var(--ink)}
+  footer{margin-top:64px;border-top:1px solid var(--line);padding:34px 0 44px;color:var(--faint);font-size:.92rem}
+  footer .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="logo">abhyudita<span>.</span>tripathi</div>
+    <div class="links">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">Machine Learning · Data Systems · GenAI Agents</div>
+    <h1>Abhyudita Tripathi<br><span class="grad">builds ML systems that rank, score and predict.</span></h1>
+    <p class="tagline">Sophomore at IIT Kharagpur building ML and data systems. ML Intern at FlyRank, working on data contracts, scoring pipelines and ranking problems.</p>
+    <div class="chips">
+      <div class="chip">IIT Kharagpur · B.Tech 2025–2029</div>
+      <div class="chip">CGPA <b>8.4 / 10</b></div>
+      <div class="chip">ML Intern · <b>FlyRank</b></div>
+      <div class="chip">AIR 281 · Integral Cup 2026</div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="#projects">See projects</a>
+      <a class="btn" href="https://github.com/ART001-coder">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/abhyudita-tripathi-26a74637b">LinkedIn</a>
+      <a class="btn" href="mailto:abhyuditatripathi@gmail.com">Email</a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section id="experience">
+  <h2>Experience</h2>
+  <p class="sub">Where I work and what I ship.</p>
+  <div class="card">
+    <h3>ML Intern — FlyRank</h3>
+    <div class="meta">Jul 2026 — Present</div>
+    <ul>
+      <li>Built DuckDB-based data contracts over a Hugging Face-hosted warehouse dataset, standardizing input schemas for downstream scoring models.</li>
+      <li>Developed a baseline content/action scoring pipeline with signal verification and a ranked-output queue, evaluated on Precision@50.</li>
+      <li>Framed content-refresh opportunity scoring as a ranking problem using a decline_score target proxy, delivered through structured weekly assignment notebooks.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="sub">Things I have built, from sign-language recognition to self-healing security agents.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Ishara — Indian Sign Language Recognition</h3>
+      <div class="meta">Python · MediaPipe · Bi-LSTM · Streamlit</div>
+      <ul>
+        <li>Built the vocabulary and data pipeline from the INCLUDE dataset; extracted pose and hand keypoints using MediaPipe Holistic.</li>
+        <li>Co-built a Bi-LSTM with attention for sign classification and authored the project's technical whitepaper.</li>
+        <li>Deployed a live browser demo on Streamlit Community Cloud with streamlit-webrtc webcam input.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Leviathan — Threat Classification System</h3>
+      <div class="meta">Python · scikit-learn</div>
+      <ul>
+        <li>Built a multiclass ML pipeline over 30,000 deep-sea telemetry sequences from 25 sensors, lifting accuracy from a 30% baseline to ~90%.</li>
+        <li>Isolated the predictive signal with ANOVA F-testing and engineered polynomial power features.</li>
+        <li>Trained an ensemble of 15 MLPs with diverse seeds under 5-fold stratified cross-validation to reduce variance.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Aegis — Self-Healing Security System</h3>
+      <div class="meta">Python · FastAPI · LLM Agents · AMD ROCm</div>
+      <ul>
+        <li>Built an LLM-agent pipeline that detects and auto-patches command-injection attacks in a FastAPI server in real time.</li>
+        <li>Ran on-device inference with Qwen3 and Llama 4 on AMD ROCm; built at the AMD Developer Hackathon: ACT II (Jul 2026).</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Summer Analytics 2026 — E-Commerce Conversion Prediction</h3>
+      <div class="meta">LightGBM · XGBoost · Random Forest</div>
+      <ul>
+        <li>Trained a LightGBM + XGBoost + Random Forest ensemble for an F1-scored conversion prediction competition (IIT Guwahati).</li>
+        <li>Combined the models with out-of-fold stacking and tuned the decision threshold to maximize F1.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>TokenTrend AI Predictor</h3>
+      <div class="meta">Python · Machine Learning · CoinGecko API</div>
+      <ul>
+        <li>Built a browser-based tool using logistic regression on historical token data to forecast cryptocurrency price trends via the CoinGecko API.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Arch Linux — Bare-Metal Install & Custom Configuration</h3>
+      <div class="meta">Linux · Bash · System Administration</div>
+      <ul>
+        <li>Performed a full bare-metal Arch Linux install from the CLI, with manual partitioning, GRUB bootloader and kernel configuration.</li>
+        <li>Configured a tiling window manager, systemd services and dotfiles; an ongoing interest in open-source, systems-level tooling.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <p class="sub">The toolbox, grouped the way I actually use it.</p>
+  <div class="skills">
+    <div class="skillbox"><h3>Languages</h3><p>Python, C, C++, SQL</p></div>
+    <div class="skillbox"><h3>ML / Data</h3><p>scikit-learn, LightGBM, XGBoost, pandas, NumPy, PyTorch (basics), MediaPipe</p></div>
+    <div class="skillbox"><h3>GenAI / Agents</h3><p>LangChain, LangGraph, Prompt Engineering, Structured Outputs (Pydantic)</p></div>
+    <div class="skillbox"><h3>Concepts</h3><p>Data Structures & Algorithms, Statistics, EDA, Feature Engineering, Model Evaluation</p></div>
+    <div class="skillbox"><h3>Tools & Platforms</h3><p>DuckDB, Git/GitHub, Streamlit, FastAPI, Arch Linux</p></div>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements & Certifications</h2>
+  <p class="sub">Competitions, certificates and campus roles.</p>
+  <ul class="plain">
+    <li><b>Integral Cup 2026, Season 2 (Round 1)</b> — All India Rank 281 among 7,500+ participants nationwide; organized by STEMvibe Foundation, sponsored by Jane Street.</li>
+    <li><b>Summer Analytics 2026</b> — Certificate of Merit, Consulting & Analytics Club, IIT Guwahati; top 25% after six weeks of machine learning coursework.</li>
+    <li><b>Certifications</b> — Supervised Machine Learning, DeepLearning.AI (Coursera) · AMD Developer Hackathon: ACT II, Certificate of Completion (Jul 2026) · Winter Consulting Course, Consulting & Analytics Club, IIT Guwahati.</li>
+  </ul>
+  <div class="card" style="margin-top:22px">
+    <h3>Leadership & Activities</h3>
+    <ul>
+      <li><b>Senior Executive Member</b> — KodeinKGP, Technology Web 3.0 Society, IIT Kharagpur.</li>
+      <li><b>Student Member</b> — KDAG (Data Analytics Group), IIT Kharagpur.</li>
+      <li><b>Associate Reporter</b> — The Scholars' Avenue, IIT Kharagpur · <b>Member</b> — Chess Club, IIT Kharagpur.</li>
+    </ul>
+  </div>
+</section>
+
+</div>
+
+<footer id="contact">
+  <div class="wrap row">
+    <div>© 2026 Abhyudita Tripathi · IIT Kharagpur</div>
+    <div>
+      <a href="mailto:abhyuditatripathi@gmail.com">Email</a> ·
+      <a href="https://github.com/ART001-coder">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/abhyudita-tripathi-26a74637b">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
