@@ -54,7 +54,10 @@
   .card ul{margin-left:18px}
   .card li{margin-bottom:4px}
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  @media (max-width:760px){.grid{grid-template-columns:1fr}h1{font-size:2.3rem}}
+  @media (max-width:760px){.grid{grid-template-columns:1fr}h1{font-size:2.3rem}
+    .nav{flex-wrap:wrap;row-gap:4px}
+    .nav .links{display:flex;flex-wrap:wrap;gap:4px 16px}
+    .nav .links a{margin-left:0;font-size:.88rem}}
   .grid .card{margin-bottom:0}
   .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
   .skillbox{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
